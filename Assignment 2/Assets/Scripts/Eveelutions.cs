@@ -20,6 +20,40 @@ public class Eveelutions : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        {
+            if(fire == true)
+            {
+                print("Flareon, I choose you!");
+            }
+            else if(water == true)
+            {
+                print("Vaporeon, I choose you!");
+            }
+            else if(electric == true)
+            {
+                print("Jolteon, I choose you!");
+            }
+            else if(dark == true)
+            {
+                print("Umbreon, I choose you!");
+            }
+            else if(grass == true)
+            {
+                print("Leafeon, I choose you!");
+            }
+            else if(fairy == true)
+            {
+                print("Sylveon, I choose you!");
+            }
+            else if(ice == true)
+            {
+                print("Glaceon, I choose you!");
+            }
+            else if(psychic == true)
+            {
+                print("Espeon, I choose you!");
+            }
+        }
+
+    }
 }
