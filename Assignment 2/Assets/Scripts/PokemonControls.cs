@@ -52,5 +52,5 @@ public class PokemonControls : MonoBehaviour {
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(movespeed,GetComponent<Rigidbody2D>().velocity.y);
         }
-    }
+    }*/
 }
