@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class Eveelutions : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public bool fire;
+    public bool water;
+    public bool electric;
+    public bool dark;
+    public bool grass;
+    public bool fairy;
+    public bool ice;
+    public bool psychic;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
