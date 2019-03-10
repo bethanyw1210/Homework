@@ -15,8 +15,9 @@ public class Eveelutions : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        print("Which eevee-lution do you want to pick?");
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
