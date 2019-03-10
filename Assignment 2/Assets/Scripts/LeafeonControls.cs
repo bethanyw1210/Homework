@@ -2,24 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlareonControl : MonoBehaviour {
+public class LeafeonControls : MonoBehaviour {
     private int movespeed = 2;
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if(Input.GetKey(KeyCode.Alpha1))
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(Input.GetKey(KeyCode.Alpha5))
         {
-            flareonControl();
-            print("Flareon, I choose you!");
+            leafeonControl();
+            print("Leafeon, I choose you!");
         }
     }
 
-    void flareonControl()
+    void leafeonControl()
     {
         if(Input.GetKey(KeyCode.LeftArrow))
         {
