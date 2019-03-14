@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class VaporeonControl : MonoBehaviour {
-    private int movespeed = 2;
-    private int jumpHeight = 5;
+    public int movespeed = 2;
+    public int jumpHeight = 5;
     private bool grounded;
     public Transform groundCheck;
     public float groundCheckRadius = 0;
