@@ -5,19 +5,12 @@ using UnityEngine;
 public class EspeonControls:MonoBehaviour {
     private int movespeed = 2;
     private int jumpHeight = 5;
-    private bool grounded;
-    public Transform groundCheck;
-    public float groundCheckRadius = 0;
-    public LayerMask whatIsGround;
+    public bool grounded = true;
 
     // Use this for initialization
     void Start()
     {
-
-    }
-    void FixedUpdate()
-    {
-        grounded = Physics2D.OverlapCircle(groundCheck.position,groundCheckRadius,whatIsGround);
+        grounded = true;
     }
 
     // Update is called once per frame
@@ -49,17 +42,10 @@ public class EspeonControls:MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        grounded = true;
-    }
-
-    void Jump()
-    {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,jumpHeight);
-    }
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        HealthBar.health -= 10f;
+        if(collision.collider.tag == ("Ground"))
+        {
+            grounded = true;
+        }
     }
 
 }
